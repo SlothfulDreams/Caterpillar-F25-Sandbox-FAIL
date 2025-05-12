@@ -7,7 +7,7 @@ Using old database info to build a new one for Cooper!
 ### Required Packages
 
 ```bash
-pip install requests pytest
+pip install requests pytest types-requests
 ```
 
 or using the uv package manager
