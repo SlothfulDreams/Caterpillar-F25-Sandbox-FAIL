@@ -103,13 +103,9 @@ Problem Statement: How can I identify which review belongs to which user, and wh
 
 ## Lessons Learned
 
-1. **TypedDict vs. Regular Classes**: TypedDict is excellent for defining dictionary structures but has limitations with inheritance and runtime behavior. Understanding when to use type aliases versus custom classes was a valuable lesson.
+1. **Benefits of custom types**: Designing custom types makes code more readable, allowing for easier time refactoring
 
-2. **The Power of Good Test Fixtures**: Creating comprehensive test fixtures made writing tests much more straightforward and helped catch edge cases early.
-
-3. **Function Signatures Matter**: Carefully designing function parameters and return types upfront saves significant refactoring later.
-
-4. **Modularity Benefits**: Breaking down the solution into small, focused components made testing, debugging, and understanding the code much easier.
+2. **Module Design**:  Breaking the solution down into smaller pieces makes easier to debug, write code, refractor.
 
 ## Key Takeaways
 
