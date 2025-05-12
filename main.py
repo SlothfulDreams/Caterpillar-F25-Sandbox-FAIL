@@ -20,7 +20,7 @@ def fetch_data(url: str) -> InputData:
     return response.json()
 
 
-def post_data(url: str, data: OutputData) -> dict[str, Any]:
+def post_data(url: str, data: OutputData) -> str:
     """
     Submit processed data to the API
 
@@ -34,7 +34,7 @@ def post_data(url: str, data: OutputData) -> dict[str, Any]:
     headers = {"Content-Type": "application/json"}
     response = requests.post(url, headers=headers, data=json.dumps(data))
 
-    return {"status_code": response.status_code, "message": response.text}
+    return f"Status Code: {response.status_code}\n Message: {response.text}"
 
 
 def run(url: str):
@@ -53,11 +53,7 @@ def run(url: str):
 
         result = post_data(url, formatted_data)
 
-        if result["status_code"] == 200:
-            print(result["message"])
-        else:
-            print(f"Error: Received status code {result['status_code']}")
-            print(result["message"])
+        print(result)
 
     except Exception as error:
         print(f"Error: {error}")
