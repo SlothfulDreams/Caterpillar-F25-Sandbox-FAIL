@@ -128,3 +128,6 @@ If I had more time or if I was a member of Sandbox I would add:
 **Export as different file types**: Feature to export to other file types such as excel, CSV, or like a PDF format
 
 **Data Analytics**: Identify trends in the co-ops for example which is most popular, best quality of life, best pay, etc
+
+## Feedback
+- Write better documentation
